@@ -11,11 +11,13 @@ public class AudioFile extends MusicMedia implements FileManager
 
     private static final int MIN_NAME_LENGTH;
     private static final int MIN_SIZE_BPS;
+    private static final int MAX_SIZE_BPS;
 
     static
     {
         MIN_NAME_LENGTH = 2;
-        MIN_SIZE_BPS = 320;
+        MIN_SIZE_BPS = 8000;
+        MAX_SIZE_BPS = 320000;
     }
 
     /**
@@ -49,9 +51,12 @@ public class AudioFile extends MusicMedia implements FileManager
      */
     private static  void validateSizeBps(final int sizeBps)
     {
-        if(sizeBps < MIN_SIZE_BPS)
+        if(sizeBps < MIN_SIZE_BPS || sizeBps > MAX_SIZE_BPS)
         {
-            throw new IllegalArgumentException("Invalid file size");
+            throw new IllegalArgumentException(
+                    String.format("Invalid file size. It should be between %d and %d",
+                                  MIN_SIZE_BPS,
+                                  MAX_SIZE_BPS));
         }
     }
 

@@ -10,17 +10,17 @@ public class VinylRecord extends MusicMedia
     private final int sizeInches;
     private final int weightGrams;
 
-    private static final int VALID_SIZE_INCHES_ONE;
-    private static final int VALID_SIZE_INCHES_TWO;
-    private static final int VALID_SIZE_INCHES_THREE;
+    private static final int VALID_SIZE_INCHES_LARGE;
+    private static final int VALID_SIZE_INCHES_MEDIUM;
+    private static final int VALID_SIZE_INCHES_SMALL;
 
-    private static final int VALID_WEIGHT_ONE_SIZE_ONE;
-    private static final int VALID_WEIGHT_TWO_SIZE_ONE;
-    private static final int VALID_WEIGHT_THREE_SIZE_ONE;
+    private static final int VALID_WEIGHT_SMALL_SIZE_LARGE;
+    private static final int VALID_WEIGHT_MEDIUM_SIZE_LARGE;
+    private static final int VALID_WEIGHT_LARGE_SIZE_LARGE;
 
-    private static final int VALID_WEIGHT_ONE_SIZE_TWO;
+    private static final int VALID_WEIGHT_SIZE_MEDIUM;
 
-    private static final int VALID_WEIGHT_ONE_SIZE_THREE;
+    private static final int VALID_WEIGHT_SIZE_SMALL;
 
     private static final int MIN_TRACKS;
 
@@ -28,17 +28,17 @@ public class VinylRecord extends MusicMedia
     {
         MIN_TRACKS = 1;
 
-        VALID_SIZE_INCHES_ONE = 12;
-        VALID_SIZE_INCHES_TWO = 10;
-        VALID_SIZE_INCHES_THREE = 7;
+        VALID_SIZE_INCHES_LARGE = 12;
+        VALID_SIZE_INCHES_MEDIUM = 10;
+        VALID_SIZE_INCHES_SMALL = 7;
 
-        VALID_WEIGHT_ONE_SIZE_ONE = 140;
-        VALID_WEIGHT_TWO_SIZE_ONE = 180;
-        VALID_WEIGHT_THREE_SIZE_ONE = 200;
+        VALID_WEIGHT_SMALL_SIZE_LARGE = 140;
+        VALID_WEIGHT_MEDIUM_SIZE_LARGE = 180;
+        VALID_WEIGHT_LARGE_SIZE_LARGE = 200;
 
-        VALID_WEIGHT_ONE_SIZE_TWO = 100;
+        VALID_WEIGHT_SIZE_MEDIUM = 100;
 
-        VALID_WEIGHT_ONE_SIZE_THREE = 40;
+        VALID_WEIGHT_SIZE_SMALL = 40;
     }
 
     /**
@@ -82,36 +82,36 @@ public class VinylRecord extends MusicMedia
                                             final int sizeInches)
     {
         validateSizeInches(sizeInches);
-        if(sizeInches == VALID_SIZE_INCHES_ONE)
+        if(sizeInches == VALID_SIZE_INCHES_LARGE)
         {
-            if(weightGrams != VALID_WEIGHT_ONE_SIZE_ONE || weightGrams != VALID_WEIGHT_TWO_SIZE_ONE || weightGrams != VALID_WEIGHT_THREE_SIZE_ONE)
+            if(weightGrams != VALID_WEIGHT_SMALL_SIZE_LARGE || weightGrams != VALID_WEIGHT_MEDIUM_SIZE_LARGE || weightGrams != VALID_WEIGHT_LARGE_SIZE_LARGE)
             {
                 throw new IllegalArgumentException(
                         String.format("Invalid Weight. For the given size %d\" the valid weights in grams are: %d, %d or %d.",
-                                      VALID_SIZE_INCHES_ONE,
-                                      VALID_WEIGHT_ONE_SIZE_ONE,
-                                      VALID_WEIGHT_TWO_SIZE_ONE,
-                                      VALID_WEIGHT_THREE_SIZE_ONE));
+                                      VALID_SIZE_INCHES_LARGE,
+                                      VALID_WEIGHT_SMALL_SIZE_LARGE,
+                                      VALID_WEIGHT_MEDIUM_SIZE_LARGE,
+                                      VALID_WEIGHT_LARGE_SIZE_LARGE));
             }
         }
-        else if(sizeInches == VALID_SIZE_INCHES_TWO)
+        else if(sizeInches == VALID_SIZE_INCHES_MEDIUM)
         {
-            if(weightGrams != VALID_WEIGHT_ONE_SIZE_TWO)
+            if(weightGrams != VALID_WEIGHT_SIZE_MEDIUM)
             {
                 throw new IllegalArgumentException(
                         String.format("Invalid Weight. For the given size %d\" the valid weight in grams is: %d.",
-                                      VALID_SIZE_INCHES_TWO,
-                                      VALID_WEIGHT_ONE_SIZE_TWO));
+                                      VALID_SIZE_INCHES_MEDIUM,
+                                      VALID_WEIGHT_SIZE_MEDIUM));
             }
         }
-        else if(sizeInches == VALID_SIZE_INCHES_THREE)
+        else if(sizeInches == VALID_SIZE_INCHES_SMALL)
         {
-            if(weightGrams != VALID_WEIGHT_ONE_SIZE_THREE)
+            if(weightGrams != VALID_WEIGHT_SIZE_SMALL)
             {
                 throw new IllegalArgumentException(
                         String.format("Invalid Weight. For the given size %d\" the valid weight in grams is: %d.",
-                                      VALID_SIZE_INCHES_THREE,
-                                      VALID_WEIGHT_ONE_SIZE_THREE));
+                                      VALID_SIZE_INCHES_SMALL,
+                                      VALID_WEIGHT_SIZE_SMALL));
             }
         }
     }
@@ -125,16 +125,16 @@ public class VinylRecord extends MusicMedia
      */
     private static void validateSizeInches(final int sizeInches)
     {
-        if(!(sizeInches == VALID_SIZE_INCHES_ONE ||
-                sizeInches == VALID_SIZE_INCHES_TWO ||
-                sizeInches == VALID_SIZE_INCHES_THREE))
+        if(!(sizeInches == VALID_SIZE_INCHES_LARGE ||
+                sizeInches == VALID_SIZE_INCHES_MEDIUM ||
+                sizeInches == VALID_SIZE_INCHES_SMALL))
         {
             throw new IllegalArgumentException(
                     String.format("Invalid size %d. It should be %d or %d or %d.",
                                   sizeInches,
-                                  VALID_SIZE_INCHES_ONE,
-                                  VALID_SIZE_INCHES_TWO,
-                                  VALID_SIZE_INCHES_THREE));
+                                  VALID_SIZE_INCHES_LARGE,
+                                  VALID_SIZE_INCHES_MEDIUM,
+                                  VALID_SIZE_INCHES_SMALL));
         }
     }
 

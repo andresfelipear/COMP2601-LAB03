@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87ebf56a-4314-45d8-83c9-260267ed6620" name="Changes" comment="audi">
-      <change afterPath="$PROJECT_DIR$/src/code/VinylRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codeWalter/AudioFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codeWalter/CompactDisc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codeWalter/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codeWalter/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codeWalter/MusicMedia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codeWalter/VinylRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab03.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/AudioFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/AudioFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/CompactDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/CompactDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/MusicMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/MusicMedia.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Documents/BCIT/Term3/COMP2601/lab03/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Documents/BCIT/Term3/COMP2601/lab03/src/codeWalter",
+    "onboarding.tips.debug.path": "D:/Documents/BCIT/Term3/COMP2601/lab03/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\BCIT\Term3\COMP2601\lab03\src\codeWalter" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

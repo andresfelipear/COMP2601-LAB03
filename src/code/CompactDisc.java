@@ -6,7 +6,7 @@
  */
 public class CompactDisc extends MusicMedia
 {
-    private final int tracksNumber;
+    private final int numberOfTracks;
     private final String readingMethod;
 
     private static final String READING_METHOD;
@@ -24,18 +24,18 @@ public class CompactDisc extends MusicMedia
      *
      * @param songTitle     The title of the song.
      * @param artistName    The name of the artist.
-     * @param tracksNumber  The number of tracks on the CD.
+     * @param numberOfTracks  The number of tracks on the CD.
      * @param readingMethod The reading method used by the CD.
      */
     public CompactDisc(final String songTitle,
                        final String artistName,
-                       final int tracksNumber,
+                       final int numberOfTracks,
                        final String readingMethod)
     {
         super(songTitle,
               artistName);
-        validateTracksNumber(tracksNumber);
-        this.tracksNumber = tracksNumber;
+        validateNumberOfTracks(numberOfTracks);
+        this.numberOfTracks = numberOfTracks;
         this.readingMethod = readingMethod;
     }
 
@@ -45,15 +45,15 @@ public class CompactDisc extends MusicMedia
      *
      * @param songTitle    The title of the song.
      * @param artistName   The name of the artist.
-     * @param tracksNumber The number of tracks on the CD.
+     * @param numberOfTracks The number of tracks on the CD.
      */
     public CompactDisc(final String songTitle,
                        final String artistName,
-                       final int tracksNumber)
+                       final int numberOfTracks)
     {
         this(songTitle,
              artistName,
-             tracksNumber,
+             numberOfTracks,
              READING_METHOD);
     }
 
@@ -61,12 +61,12 @@ public class CompactDisc extends MusicMedia
      * Validates the number of tracks.
      * Ensures the number of tracks is at least the minimum required.
      *
-     * @param tracksNumber The number of tracks to be validated.
+     * @param numberOfTracks The number of tracks to be validated.
      * @throws IllegalArgumentException if the number of tracks is invalid.
      */
-    private static void validateTracksNumber(final int tracksNumber)
+    private static void validateNumberOfTracks(final int numberOfTracks)
     {
-        if(tracksNumber < MIN_TRACKS)
+        if(numberOfTracks < MIN_TRACKS)
         {
             throw new IllegalArgumentException("Invalid number of tracks");
         }
@@ -77,9 +77,9 @@ public class CompactDisc extends MusicMedia
      *
      * @return The number of tracks.
      */
-    public int getTracksNumber()
+    public int getNumberOfTracks()
     {
-        return tracksNumber;
+        return numberOfTracks;
     }
 
     /**
@@ -94,8 +94,8 @@ public class CompactDisc extends MusicMedia
                              readingMethod) +
                 super.toString() +
                 String.format(" and includes %d ",
-                              tracksNumber) +
-                (tracksNumber == MIN_TRACKS ? "track" : "tracks");
+                              numberOfTracks) +
+                (numberOfTracks == MIN_TRACKS ? "track" : "tracks");
     }
 
     /**
