@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ebf56a-4314-45d8-83c9-260267ed6620" name="Changes" comment="audi">
-      <change afterPath="$PROJECT_DIR$/src/codeWalter/AudioFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codeWalter/CompactDisc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codeWalter/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codeWalter/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codeWalter/MusicMedia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/codeWalter/VinylRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab03.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/AudioFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/AudioFile.java" afterDir="false" />
+    <list default="true" id="87ebf56a-4314-45d8-83c9-260267ed6620" name="Changes" comment="modified naming convention.">
+      <change beforePath="$PROJECT_DIR$/src/code/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codeWalter/Driver.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +71,20 @@
       <option name="project" value="LOCAL" />
       <updated>1717147631689</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="modified naming convention.">
+      <option name="closed" value="true" />
+      <created>1717534601685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717534601685</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="audi" />
-    <option name="LAST_COMMIT_MESSAGE" value="audi" />
+    <MESSAGE value="modified naming convention." />
+    <option name="LAST_COMMIT_MESSAGE" value="modified naming convention." />
   </component>
 </project>
